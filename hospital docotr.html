@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/hospital.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hospital</title>
+
+  <style>
+    /* carousel slider */
+    /* .img-fluid {
+          height: 165px;
+        } */
+
+    .card-img p {
+      position: relative;
+      top: 17px;
+    }
+
+    .card-img span {
+      color: green;
+    }
+
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item>div {
+        display: none;
+      }
+
+      .carousel-inner .carousel-item>div:first-child {
+        display: block;
+      }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+
+    /* medium and up screens */
+    @media (min-width: 768px) {
+
+      .carousel-inner .carousel-item-end.active,
+      .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+      }
+
+      .carousel-inner .carousel-item-start.active,
+      .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+      }
+    }
+
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+      transform: translateX(0);
+    }
+
+    /* carousel end */
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- *************************** header section start******-------------------------------------***************** -->
+  <div class="container-fluid head ">
+    <div class="container">
+      <div class="row">
+
+        <nav class="col navbar  "><img src="css/images/logo_1.png" alt="">
+
+          <a class="col navbar-brand" href="#">
+            <h3> PALAM</h3>
+            <span>Hospital</span>
+          </a>
+
+
+          <div class="col"> <input class="col search" type="text" placeholder="  Search "></div>
+          <div class="col"></div>
+
+          <div class="col "> <a href="hospital managment.html"> Home</a></div>
+          <div class="col"> <a href="hospital contact.html"> Contact</a></div>
+          <div class="col"> <a href="hospital services.html"> Services </a></div>
+          <div class="col"><a href=""> Doctor</a></div>
+          <div class="col"> <a href="hospital about.html"> About</a></div>
+
+        </nav>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- *************************** header section end******-------------------------------------***************** -->
+
+
+  <!-- ************************* banner sectio start******-------------------------------------***************** -->
+  <div class="container-fluid2 d-block mt-3">
+    <div class="row"> <img src="css/images/bg_01.jpg" alt="" class="img-fluid">
+      
+    </div>
+  </div>
+
+  <!-- *************************** banner section end******-------------------------------------***************** -->
+
+  <!-- ************************* images section start******-------------------------------------***************** -->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col "><img class="img-fluid" src="css/images/dr gopal.JPG" height="20px" width="100%" alt="">
+        
+ <h4 class="mt-2">Dr. Gopal Sharma</h4>
+
+Principal Director - Medical Oncology (Breast, Thoracic, Gynaecology)<br>
+
+Cancer Care / Oncology, Gynecologic Oncology, Thoracic Oncology, Medical Oncology, Breast Cancer<br>
+
+Experience: 17+ Years<br>
+
+Gender: Male
+
+      </div>
+
+      <div class="col"><img class="img-fluid" src="css/images/dr rajash.jpg" height="20px" width="100%" alt="">
+        
+        
+<h4 class="mt-2">Dr. Rajashekar Reddi</h4>
+
+Principal Director - Headache and Neuromuscular Disorders<br>
+
+Neurosciences, Neurology<br>
+
+Experience: 18+ Years<br>
+
+Gender: Male
+
+       
+             </div>
+
+             <div class="col"><img  class="img-fluid" src="css/images/dr sanjiv.jpg" height="20px" width="100%" alt="">
+              
+<h4 class="mt-2">Dr. Sanjiv Saigal</h4>
+
+Principal Director & Head<br>
+
+Liver Transplant and Biliary Sciences, Gastroenterology, Hepatology & Endoscopy<br>
+
+Experience: 26+ Years<br>
+
+Gender: Male
+
+            </div>
+
+            <div class="col"><img class="img-fluid" src="css/images/dr sameer.png"  height="20px" width="100%"  alt="">
+              
+<h4 class="mt-2">Dr. Sameer Shrivastava</h4>
+
+Chief – Non-invasive Cardiology & Principal Director, Cardiology<br>
+
+Cardiology, Cardiac Sciences, Interventional Cardiology<br>
+
+Experience: 28+ Years<br>
+
+Gender: Male
+
+
+            </div>
+    </div>
+  </div>
+
+
+  <!-- ****************Doctor section start******-------------------------------------***************** -->
+  <div class="container-fluid bg-light mt-5">
+    <div class="container vedio">
+      <h1>Our Doctors</h1>
+
+
+    </div>
+  </div>
+
+
+
+  <div class="container text-center bg-light my-3">
+    <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel" class="carousel carousel_1 slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item carousel-item_1 active">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="css/images/dr dinesh.jpg" height="20px" width="100%" class="img-fluid">
+                  <p>
+                  <h4> Dr. Dinesh Khullar</h4>
+
+                  <bold> Chairman - Nephrology & Renal Transplant Medicine, Max Saket Complex<br>
+
+                    Kidney Transplant, Nephrology<br>
+
+                    Experience: 30+ Years<br>
+
+                    Gender: Male</bold>
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item  carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="css/images/Dr_Anupam_Bhargava.jpg" height="20px" width="100%" class="img-fluid">
+                  <p>
+                  <h4> Dr. Anupam Bhargava</h4>
+
+                  Chairman - Urology<br>
+
+                  Urology<br>
+
+                  Experience: 44+ Years<br>
+
+                  Gender: Male
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item  carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="css/images/Dr_Sandeep_Budhiraja.jpeg" class="img-fluid">
+                  <p>
+                  <h4> Dr. Sandeep Budhiraja</h4>
+
+                  Group Medical Director - Max Healthcare & Senior Director - Institute of Internal Medicine
+
+                  Internal Medicine<br>
+
+                  Experience: 28+ Years<br>
+
+                  Gender: Male
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item  carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="css/images/Dr_Harit_Chaturvedi.jpg" class="img-fluid">
+
+                  <p>
+                  <h4> Dr. Harit Chaturvedi </h4>
+                  Chairman - Max Institute of Cancer Care<br>
+
+                  Cancer Care / Oncology, Thoracic Oncology, Surgical Oncology, Robotic Surgery, Head & Neck Oncology,
+                  Breast Cancer<br>
+
+                  Experience: 33+ Years<br>
+
+                  Gender: Male
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item  carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="css/images/Dr_Meenu_Walia.jpg" class="img-fluid">
+                  <p>
+                  <h4> Dr. Meenu Walia</h4>
+
+                  Vice Chairman - Medical Oncology (Breast, Gynaecology, Thoracic)<br>
+
+                  Cancer Care / Oncology, Gynecologic Oncology, Thoracic Oncology, Cancer<br>
+
+                  Experience: 33+ Years<br>
+
+                  Gender: Female
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item  carousel-item_1">
+            <div class="col-md-3">
+              <div class="card">
+                <div class="card-img">
+                  <img src="css/images/Dr_Pradeep_Chowbey.jpg" class="img-fluid">
+                  <p>
+
+                  <h4> Dr. Pradeep Chowbey</h4>
+
+                  Chairman - Max Institute of Laparoscopic, Endoscopic,
+                  Specialities<br>
+
+                  Laparoscopic / Minimal Access Surgery, Bariatric Surgery / Metabolic,
+                  Endoscopic & Bariatric Surgery, Robotic Surgery<br>
+
+                  Experience: 46+ Years<br>
+
+                  Gender: Male
+
+                  </p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ****************Doctor section End******-------------------------------------***************** -->
+
+
+  <!-- ****************Footer section start******-------------------------------------***************** -->
+
+  <div class="container-fluid mt-4 footer6">
+    <div class="container">
+      <div class="row py-3 ">
+        <div class="col footer">
+          <h6>QUICK LINKS</h6>
+
+          <a href="hospital docotr.html">Find Doctor</a><br>
+          <a href="#">Book an Appointment</a><br>
+          <a href="#">International Patients</a><br>
+          <a href="hospital enqiury.html">Make an Enquiry</a><br>
+          <a href="#">Heart Rhythm Disorder</a><br>
+          <a href="#">Blogs</a><br>
+          <a href="#">Careers</a><br>
+          <a href="#">Hospitals</a><br>
+        </div>
+
+
+        <div class="col footer">
+          <h6>SOCIAL</h6>
+          <a href="https://www.facebook.com/">Facebook</a><br>
+          <a href="https://twitter.com/i/flow/login">Twitter</a><br>
+          <a href="https://www.youtube.com/watch?v=gGx5KRirets">YouTube</a><br><br>
+          <a href="https://twitter.com/i/flow/login" ><i class="fa-brands fa-square-twitter fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.youtube.com/watch?v=gGx5KRirets"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a>
+          <br>
+        </div>
+        <div class="col footer">
+          <h6>Mail Us:</h6>
+
+          <p> Palam Hospital,<br>
+            Building Alyssa,<br>Begonia &
+            Clove Embassy <br>Tech Palam Village,<br>
+            Near Palam Flyover<br>,Palam Village,<br>
+            New Delhi,110045,<br>
+            Delhi,India<br></p>
+        </div>
+        <div class="col footer">
+          <h6>Registered Office Address:</h6>
+          <p> Palam Hospital,<br>
+            Building Alyssa,<br>Begonia &
+            Clove Embassy <br>Tech Palam Village,<br>
+            Near Palam Flyover<br>,Palam Village,<br>
+            New Delhi,110045,<br>
+            Delhi,India<br></p>
+        </div>
+        <div class="container">
+          <div class="divider"> </div>
+          <div class="row col-8 footer1 d-block last">
+
+            <a href="#"><i class="fa-brands fa-slack" style="color: #b9b342;"></i> Advertise</a>
+            <a href="#"><i class="fa-solid fa-gift" style="color: #b1aa47;"></i> Gift Cards</a>
+            <a href="#"><i class="fa-solid fa-circle-info" style="color: #bfbc42;"></i> Help Center</a>
+
+
+
+
+
+          </div>
+        </div>
+
+        <!-- <div class="col-4"><img src="css/images/cards_01.png" height="20px" width="50px" alt="">
+        <img src="css/images/cards_02.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_03.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_04.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_05.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_06.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_07.jpg" height="20px" width="50px" alt="">
+      </div> -->
+      </div>
+
+      <!-- ****************Footer section End******-------------------------------------***************** -->
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+      <script>
+
+        let items1 = document.querySelectorAll('.carousel_1 .carousel-item_1 ')
+
+
+        items1.forEach((el) => {
+          const minPerSlide = 4
+          let next = el.nextElementSibling
+          for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+              // wrap carousel by using first child
+              next = items1[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+          }
+        })
+      </script>
+</body>
+
+</html>

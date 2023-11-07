@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/hospital.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hospital</title>
+
+  <style>
+    /* carousel slider */
+    /* .img-fluid {
+          height: 165px;
+        } */
+
+    .card-img p {
+      position: relative;
+      top: 17px;
+    }
+
+    .card-img span {
+      color: green;
+    }
+
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item>div {
+        display: none;
+      }
+
+      .carousel-inner .carousel-item>div:first-child {
+        display: block;
+      }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+
+    /* medium and up screens */
+    @media (min-width: 768px) {
+
+      .carousel-inner .carousel-item-end.active,
+      .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+      }
+
+      .carousel-inner .carousel-item-start.active,
+      .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+      }
+    }
+
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+      transform: translateX(0);
+    }
+
+    /* carousel end */
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- *************************** header section start******-------------------------------------***************** -->
+  <div class="container-fluid head ">
+    <div class="container">
+      <div class="row">
+
+        <nav class="col navbar  "><img src="css/images/logo_1.png" alt="">
+
+          <a class="col navbar-brand" href="#">
+            <h3> PALAM</h3>
+            <span>Hospital</span>
+          </a>
+
+
+          <div class="col "> <input class="col search" type="text" placeholder="  Search "></div>
+          <div class="col"></div>
+
+          <div class="col "> <a href="hospital managment.html"> Home</a></div>
+          <div class="col"> <a href=""> Contact</a></div>
+          <div class="col"> <a href="hospital services.html"> Services </a></div>
+          <div class="col"><a href="hospital docotr.html"> Doctor</a></div>
+          <div class="col"> <a href="hospital about.html"> About</a></div>
+
+        </nav>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- *************************** header section end******-------------------------------------***************** -->
+
+
+  <!-- ************************* banner sectio start******-------------------------------------***************** -->
+  <div class="container-fluid2 d-block mt-3">
+    <div class="row">
+     
+        <img src="css/images/bg_01.jpg" alt="" class="img-fluid">
+     
+    </div>
+  </div>
+
+  <!-- *************************** banner section end******--------------------------------***************** -->
+
+  <div class="container-fluid mt-5 bg-info">
+    <div class="row"><h1>Enquiry Form</h1>
+      <div class="col bg-light">
+       <bold>
+         <br>
+        If you have any medical, or hospital process related query, reach out to us and don't hesitate to ask. We<br> are here to provide you transparent, seamless, and informative care<br>
+        Please fill in the required details and our team will get in touch with you.<br>
+        
+            Step 1 - Select the enquiry type<br>
+            Step 2 - Enter your contact details - Name, Email ID & Phone no<br>
+            Step 3 - Select Hospital you want to enquire about<br>
+            Step 4 - Add your comments or remarks if any<br>
+            Step 5 - Press the submit button and the request will go to the concerned team<br></bold>
+      </div>
+      <div class="col box">
+
+        <div>  <form action="/action_page.php">
+          <label for="cars">Enquiry Type</label><br>
+          <select name="cars" id="cars">
+            <option value="selcet">-Select-</option>
+            <option value="Dr Appointment">Dr Appointment</option>
+            <option value="Health">Health Packeges</option>
+            <option value="Immigration">Immigration</option>
+            <option value="At home ">Health Care At Home</option>
+            <option value="Lab">Lab Report</option>
+          </select>
+        
+        </form></div>
+       
+    
+      
+        <div>Email<br><input type="text" placeholder="Enter Email"></div>
+
+      
+      
+      <div>  <form action="/action_page.php">
+        <label for="cars">Hospital</label><br>
+        <select name="cars" id="cars">
+          <option value="selcet">-Select Hospital-</option>
+          <option value="Dr Appointment">Palam Hospital Saket</option>
+          <option value="Health">Palam Hospital Okhla</option>
+          <option value="Immigration">Palam Hospital Rohini</option>
+          <option value="At home ">Palam Hospital Dwarka</option>
+          <option value="Lab">Palam Hospital Pahadganj</option>
+        </select>
+      
+      </form></div>
+
+      <div>Remarks <textarea name="remarks" id="" cols="40" rows="5" placeholder="Please Enter Your Remarks"></textarea></div>
+
+      <button type="button" class="btn click btn-primary mt-5 " data-bs-toggle="modal" data-bs-target="#myModal">
+        Submit
+      </button>
+    </div>
+
+
+      <div class="col  box">
+
+        <div>Name<br><input type="text" placeholder="Enter Name"></div>
+        <div>Mobile No.<br><input type="text" placeholder="Phone No"></div>
+        <div>  <form action="/action_page.php">
+          <label for="cars">Preferred Time To Cell</label><br>
+          <select name="cars" id="cars">
+            <option value="selcet">Preferred Time To Cell</option>
+            <option value="Dr Appointment">8:00 AM-9:00 AM</option>
+            <option value="Health">9:00 AM-10:00 AM</option>
+            <option value="Immigration">10:00 AM-11:00 AM</option>
+            <option value="At home ">11:00 AM-12:00 AM</option>
+            <option value="Lab">12:00 AM-01:00 PM</option>
+          </select>
+        
+        </form></div>
+       
+       
+      </div>
+      
+       
+     
+     
+    
+    </div>
+  </div>
+
+<!--------------------------------------contact us start-------------------------------------------------->
+ <div class="container-fluid mt-5 bg-info">
+    <div class="row">
+       
+        <div class="col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7006.708991083428!2d77.07795695!3d28.58914025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b3f0aa163db%3A0xe43ee67d0a575def!2sPalam%20Village%2C%20Palam%2C%20Delhi!5e0!3m2!1sen!2sin!4v1698471574743!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col">
+          <h3>Mail Us:</h3>
+
+          <p> Palam Hospital,
+            Building Alyssa,Begonia &
+            Clove Embassy Tech Palam Village,
+            Near Palam Flyover,Palam Village,
+            New Delhi,110045,
+            Delhi,India</p>
+        </div>
+        <div class="col">
+          <h3>Registered Office Address:</h3>
+           Palam Hospital,
+            Building Alyssa,Begonia &
+            Clove Embassy Tech Palam Village,
+            Near Palam Flyover,Palam Village,
+            New Delhi,110045,
+            Delhi,India
+        </div>
+    </div>
+ </div>
+
+ <!--------------------------------------contact us end-------------------------------------------------->
+
+  <!-- ****************Footer section start******-------------------------------------***************** -->
+
+  <div class="container-fluid mt-4 footer6">
+    <div class="container">
+      <div class="row py-3 ">
+        <div class="col footer">
+          <h6>QUICK LINKS</h6>
+
+          <a href="hospital docotr.html">Find Doctor</a><br>
+          <a href="#">Book an Appointment</a><br>
+          <a href="#">International Patients</a><br>
+          <a href="hospital enqiury.html">Make an Enquiry</a><br>
+          <a href="#">Heart Rhythm Disorder</a><br>
+          <a href="#">Blogs</a><br>
+          <a href="#">Careers</a><br>
+          <a href="#">Hospitals</a><br>
+        </div>
+
+
+        <div class="col footer">
+          <h6>SOCIAL</h6>
+
+          <a href="https://www.facebook.com/">Facebook</a><br>
+          <a href="https://twitter.com/i/flow/login">Twitter</a><br>
+          <a href="https://www.youtube.com/watch?v=gGx5KRirets">YouTube</a><br><br>
+          <a href="https://twitter.com/i/flow/login" ><i class="fa-brands fa-square-twitter fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.youtube.com/watch?v=gGx5KRirets"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a>
+          <br>
+        </div>
+        <div class="col footer">
+          <h6>Mail Us:</h6>
+
+          <p> Palam Hospital,<br>
+            Building Alyssa,<br>Begonia &
+            Clove Embassy <br>Tech Palam Village,<br>
+            Near Palam Flyover<br>,Palam Village,<br>
+            New Delhi,110045,<br>
+            Delhi,India<br></p>
+        </div>
+        <div class="col footer">
+          <h6>Registered Office Address:</h6>
+          <p> Palam Hospital,<br>
+            Building Alyssa,<br>Begonia &
+            Clove Embassy <br>Tech Palam Village,<br>
+            Near Palam Flyover<br>,Palam Village,<br>
+            New Delhi,110045,<br>
+            Delhi,India<br></p>
+        </div>
+        <div class="container">
+          <div class="divider"> </div>
+          <div class="row col-8 footer1 d-block last">
+
+            <a href="#"><i class="fa-brands fa-slack" style="color: #b9b342;"></i> Advertise</a>
+            <a href="#"><i class="fa-solid fa-gift" style="color: #b1aa47;"></i> Gift Cards</a>
+            <a href="#"><i class="fa-solid fa-circle-info" style="color: #bfbc42;"></i> Help Center</a>
+
+
+
+
+
+          </div>
+        </div>
+
+        <!-- <div class="col-4"><img src="css/images/cards_01.png" height="20px" width="50px" alt="">
+        <img src="css/images/cards_02.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_03.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_04.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_05.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_06.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_07.jpg" height="20px" width="50px" alt="">
+      </div> -->
+      </div>
+
+      <!-- ****************Footer section End******-------------------------------------***************** -->
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+      <script>
+
+        let items1 = document.querySelectorAll('.carousel_1 .carousel-item_1 ')
+
+
+        items1.forEach((el) => {
+          const minPerSlide = 4
+          let next = el.nextElementSibling
+          for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+              // wrap carousel by using first child
+              next = items1[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+          }
+        })
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/hospital.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hospital</title>
+
+  <style>
+    /* carousel slider */
+    /* .img-fluid {
+          height: 165px;
+        } */
+
+    .card-img p {
+      position: relative;
+      top: 17px;
+    }
+
+    .card-img span {
+      color: green;
+    }
+
+    @media (max-width: 767px) {
+      .carousel-inner .carousel-item>div {
+        display: none;
+      }
+
+      .carousel-inner .carousel-item>div:first-child {
+        display: block;
+      }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
+
+    /* medium and up screens */
+    @media (min-width: 768px) {
+
+      .carousel-inner .carousel-item-end.active,
+      .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+      }
+
+      .carousel-inner .carousel-item-start.active,
+      .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+      }
+    }
+
+    .carousel-inner .carousel-item-end,
+    .carousel-inner .carousel-item-start {
+      transform: translateX(0);
+    }
+
+    /* carousel end */
+  </style>
+
+</head>
+
+<body>
+
+
+  <!-- *************************** header section start******-------------------------------------***************** -->
+  <div class="container-fluid head ">
+    <div class="container">
+      <div class="row">
+
+        <nav class="col navbar  "><img src="css/images/logo_1.png" alt="">
+
+          <a class="col navbar-brand" href="#">
+            <h3> PALAM</h3>
+            <span>Hospital</span>
+          </a>
+
+
+          <div class="col"> <input class="col search" type="text" placeholder="  Search "></div>
+          <div class="col"></div>
+
+          <div class="col "> <a href="hospital managment.html"> Home</a></div>
+          <div class="col"> <a href="hospital contact.html"> Contact</a></div>
+          <div class="col"> <a href=""> Services </a></div>
+          <div class="col"><a href="hospital docotr.html"> Doctor</a></div>
+          <div class="col"> <a href="hospital about.html"> About</a></div>
+
+        </nav>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- *************************** header section end******-------------------------------------***************** -->
+
+
+  <!-- ************************* banner sectio start******-------------------------------------***************** -->
+  <div class="container-fluid2 d-block mt-3">
+    <div class="row">
+      
+        <img src="css/images/bg_01.jpg" alt="" class="img-fluid">
+      
+    </div>
+  </div>
+
+  <!-- *************************** banner section end******-------------------------------------***************** -->
+  <div class="container">
+    <div class="row hospital">
+      <div class="col">
+        <h1> Our Institutes</h1>
+        <i class="fa-solid fa-hand-holding-medical"></i> Cancer Care<br>
+        <i class="fa-solid fa-heart"></i> Heart & Vascular Sciences<br>
+        <i class="fa-solid fa-brain"></i> Musculoskeletal Sciences & Orthopaedics<br>
+        <i class="fa-solid fa-viruses"></i> Minimal Access & Laparoscopic Surgery<br>
+        <i class="fa-solid fa-staff-snake"></i> Neurosciences<br>
+        <i class="fa-solid fa-kit-medical"></i> Transplant Medicine<br>
+        <i class="fa-regular fa-eye"></i> Urology<br>
+        <i class="fa-solid fa-wheelchair-move"></i> Liver & Biliary Sciences<br>
+        <i class="fa-solid fa-brain"></i> Robotic Surgery
+      </div>
+      <div class="col">
+
+
+        <h1>Procedures</h1>
+        <i class="fa-solid fa-lungs"></i> Bariatric Surgery<br>
+        <i class="fa-solid fa-flask-vial"></i> Bone Marrow Transplant (BMT)<br>
+        <i class="fa-solid fa-capsules"></i> Brain Stroke Treatment<br>
+        <i class="fa-solid fa-crutch"></i> Brain Tumour Surgery<br>
+        <i class="fa-solid fa-bone"></i> Breast Reduction Surgery<br>
+        <i class="fa-solid fa-head-side-cough"></i> Cardiac Valve Replacement Surgery<br>
+        <i class="fa-solid fa-heart-circle-check"></i>Cataract Surgery<br>
+        <i class="fa-solid fa-mask-face"></i>Chemotherapy<br>
+        <i class="fa-solid fa-person-cane"></i>Coronary Angioplasty
+      </div>
+      <div class="col">
+        <h1>Surgery</h1>
+        <i class="fa-solid fa-stethoscope"></i> Coronary Artery Bypass Grafting (CABG)<br>
+        <i class="fa-solid fa-bacteria"></i>Kidney Transplant<br>
+        <i class="fa-solid fa-bed-pulse"></i> Laparoscopic Urologic Surgery<br>
+        <i class="fa-solid fa-virus-covid"></i> Lithotripsy<br>
+        <i class="fa-solid fa-x-ray"></i> Liver Transplant<br>
+        <i class="fa-solid fa-thermometer"></i> Lung Transplant<br>
+        <i class="fa-solid fa-tooth"></i> Pacemaker Implantation<br>
+        <i class="fa-solid fa-square-virus"></i> Prostate Laser Surgery
+      </div>
+    </div>
+  </div>
+
+  <!-- ************************* images section start******-------------------------------------***************** -->
+
+  <div class="container mt-5">
+    <div class="row ">
+
+
+      <h2>Our Speciality</h2>
+
+      <div class="col doctor bg-light"><img src="css/images/orthopedics.jpg" alt="" class="img-fluid">
+        <h4>Orthopaedics </h4>(also called orthopaedic surgery) is the medical specialty that
+        focuses on injuries and diseases of your body's<br> musculoskeletal system. This complex
+        system, which includes<br> your bones, joints, ligaments, <br>tendons, muscles, and nerves, allows you to move,
+        work, and be active.<br>
+        <button class="btn btn-primary mt-3">Read More</button>
+      </div>
+
+      <div class="col doctor bg-light"><img src="css/images/Cardiology.jpg" alt="" class="img-fluid">
+        <h4>Cardiology</h4>
+        The term cardiology is derived from the Greek words “cardia,” which refers to the heart and
+        “logy” meaning “study of.” Cardiology is a branch of medicine that concerns diseases and
+        disorders of the heart, which may range from congenital defects through to acquired heart diseases such as
+        coronary artery <br>
+        <button class="btn btn-primary mt-3">Read More</button>
+      </div>
+      <div class="col doctor bg-light"><img src="css/images/Respiratory-Medicine.jpg" alt="" class="img-fluid">
+        <h4> Respiratory-Medicine</h4>
+        You may not look forward to your annual doctor’s visit, but the yearly exam can play a
+        crucial part in your ongoing health. Your doctor knows this, and uses that time to check for
+        any symptoms or signs of health problems—and catch them while there’s still time to do
+        something about<br>
+        <button class="btn btn-primary mt-4">Read More</button>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+  <!-- *********************** images section end******-------------------------------------***************** -->
+
+
+
+
+  <!-- ****************Footer section start******-------------------------------------***************** -->
+
+  <div class="container-fluid mt-4 footer6">
+    <div class="container">
+      <div class="row py-3 ">
+        <div class="col footer">
+          <h6>QUICK LINKS</h6>
+
+          <a href="hospital docotr.html">Find Doctor</a><br>
+          <a href="#">Book an Appointment</a><br>
+          <a href="#">International Patients</a><br>
+          <a href="hospital enqiury.html">Make an Enquiry</a><br>
+          <a href="#">Heart Rhythm Disorder</a><br>
+          <a href="#">Blogs</a><br>
+          <a href="#">Careers</a><br>
+          <a href="#">Hospitals</a><br>
+        </div>
+
+
+        <div class="col footer">
+          <h6>SOCIAL</h6>
+
+          <a href="https://www.facebook.com/">Facebook</a><br>
+          <a href="https://twitter.com/i/flow/login">Twitter</a><br>
+          <a href="https://www.youtube.com/watch?v=gGx5KRirets">YouTube</a><br><br>
+          <a href="https://twitter.com/i/flow/login" ><i class="fa-brands fa-square-twitter fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook fa-2xl" style="color: #ffffff;"></i></a>
+          <a href="https://www.youtube.com/watch?v=gGx5KRirets"><i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i></a>
+          <br>
+        </div>
+        <div class="col footer">
+          <h6>Mail Us:</h6>
+
+          <p> Palam Hospital,<br>
+            Building Alyssa,<br>Begonia &
+            Clove Embassy <br>Tech Palam Village,<br>
+            Near Palam Flyover<br>,Palam Village,<br>
+            New Delhi,110045,<br>
+            Delhi,India<br></p>
+        </div>
+        <div class="col footer">
+          <h6>Registered Office Address:</h6>
+          <p> Palam Hospital,<br>
+            Building Alyssa,<br>Begonia &
+            Clove Embassy <br>Tech Palam Village,<br>
+            Near Palam Flyover<br>,Palam Village,<br>
+            New Delhi,110045,<br>
+            Delhi,India<br></p>
+        </div>
+        <div class="container">
+          <div class="divider"> </div>
+          <div class="row col-8 footer1 d-block last">
+
+            <a href="#"><i class="fa-brands fa-slack" style="color: #b9b342;"></i> Advertise</a>
+            <a href="#"><i class="fa-solid fa-gift" style="color: #b1aa47;"></i> Gift Cards</a>
+            <a href="#"><i class="fa-solid fa-circle-info" style="color: #bfbc42;"></i> Help Center</a>
+
+
+
+
+
+          </div>
+        </div>
+
+        <!-- <div class="col-4"><img src="css/images/cards_01.png" height="20px" width="50px" alt="">
+        <img src="css/images/cards_02.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_03.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_04.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_05.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_06.jpg" height="20px" width="50px" alt="">
+        <img src="css/images/cards_07.jpg" height="20px" width="50px" alt="">
+      </div> -->
+      </div>
+
+      <!-- ****************Footer section End******-------------------------------------***************** -->
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+      <script>
+
+        let items1 = document.querySelectorAll('.carousel_1 .carousel-item_1 ')
+
+
+        items1.forEach((el) => {
+          const minPerSlide = 4
+          let next = el.nextElementSibling
+          for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+              // wrap carousel by using first child
+              next = items1[0]
+            }
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling
+          }
+        })
+      </script>
+</body>
+
+</html>
